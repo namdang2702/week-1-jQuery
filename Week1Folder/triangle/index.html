@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Angle</title>
+    <link rel="stylesheet" href="triangle.css">
+</head>
+
+<body>
+    <main>
+
+        <h1> Find The Third Angle of A Triangle </h1>
+
+        <script>
+            "use strict";
+
+            //get first angle measure
+            const first_angle = parseInt(prompt("Enter First Angle Measure In Degree"));
+
+            //get second angle measure
+            const second_angle = parseInt(prompt("Enter Second Angle Measure In Degree"));
+
+            //determine third angle measure
+            const third_angle = parseFloat(180 - first_angle - second_angle);
+
+            //show result
+
+            const html = `<p><label>First Angle Measure: </label>${first_angle}</p>
+
+                <p><label>Second Angle Measure: </label>${second_angle}</p>
+                <p><label>Third Angle Determine: </label>${third_angle.toFixed(2)}</p>`;
+
+            document.write(html);
+
+        </script>
+
+    </main>
+
+</body>
+
+</html>

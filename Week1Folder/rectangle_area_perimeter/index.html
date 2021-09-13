@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Rectangle Area And Perimeter</title>
+    <link rel="stylesheet" href="rectangle.css">
+</head>
+
+<body>
+    <main>
+
+        <h1> Find Rectangle Area And Perimeter </h1>
+
+        <script>
+            "use strict";
+
+            //get length measure
+            const length = parseInt(prompt("Enter Length Measure"));
+
+            //get width measure
+            const width = parseInt(prompt("Enter Width Measure"));
+
+            //calculate area
+            const area = parseFloat(length * width);
+
+            //calculate perimeter
+            const perimeter = parseFloat(2 * (length + width));
+
+            //show result
+
+            const html = `<p><lable> Rectangle Length: </lable>${length}</p>
+            <p><lable> Rectangle Width: </lable>${width}</p>
+            <p><label>Rectangle Area: </label>${area}</p>
+            <p><label>Rectangle Perimeter: </label>${perimeter}</p>`;
+
+            document.write(html);
+
+        </script>
+
+    </main>
+
+</body>
+
+</html>

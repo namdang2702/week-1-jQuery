@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meal Total Cost </title>
+    <link rel="stylesheet" href="dinner.css">
+</head>
+
+<body>
+    <main>
+
+        <h1> Meal Total Cost Calculation </h1>
+
+        <script>
+            "use strict";
+
+            //dinner cost
+            const cost = parseInt(prompt("Enter Bill Cost"));
+
+            //tip percentage
+            const tipPercent = parseInt(prompt("Enter Tip Percentage"));
+
+            //total calculation
+            const total = parseFloat(cost + (cost*tipPercent/100));
+
+            //show result
+
+            const html = `<p><label>Bill: </label>${cost}</p>
+
+                <p><label>Tip Percentage: </label>${tipPercent}</p>
+                <p><label>Total: </label>${total.toFixed(2)}</p>`;
+
+            document.write(html);
+
+        </script>
+
+    </main>
+
+</body>
+
+</html>
